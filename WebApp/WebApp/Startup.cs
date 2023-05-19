@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,7 +25,10 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            services.AddSingleton<IEmployeeRepo, EmployeeRepo>();
+            services.AddScoped<IEmployeeRepo,SqlEmployeeRepo>();
+            services.AddDbContextPool<AppDbContext>(
+                options => options.UseSqlServer(_confi.GetConnectionString("EmployeeDBConnection"))
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +46,11 @@ namespace WebApp
 
 
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
 
             /* 
@@ -64,14 +73,18 @@ namespace WebApp
 
 
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();  //Select default mvc setting 
+            app.UseMvc(route =>
+            {
+                route.MapRoute(default, "{controller=home}/{action=index}/{id?}");
+            });
 
-            app.Run( async context =>
+            /*app.Run( async context =>
             {
                 //throw new Exception("Some error while processing the request");
                
                 await context.Response.WriteAsync("Hello World!");
-            });
+            });*/
 
         }
     }

@@ -8,6 +8,13 @@ namespace WebApp.Repository
 {
     public interface IEmployeeRepo
     {
-        Employee GetEmployeeById(int id);
+        public Employee GetEmployeeById(int id);
+        public IEnumerable<Employee> GetEmployees();
+        public Employee AddEmployee(Employee employee);
+
+        public Employee Update(Employee employeeChanges);
+
+        public Employee Delete(int id);
+
     }
 }

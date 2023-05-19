@@ -1,22 +1,138 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting.Internal;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApp.Models;
 using WebApp.Repository;
+using WebApp.ViewModels;
 
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private IEmployeeRepo _employeeRepo;
-        public HomeController(IEmployeeRepo employeeRepo)
+        private readonly IEmployeeRepo _employeeRepo;
+        private readonly IHostingEnvironment _hostingEnvironment;
+        public HomeController(IEmployeeRepo employeeRepo, IHostingEnvironment hostingEnvironment)
         {
             _employeeRepo = employeeRepo;
+            _hostingEnvironment = hostingEnvironment;
         }
-        public string Index()
+
+        private string ProcessUploadFile(EmployeeCreateViewModel model)
         {
-            return _employeeRepo.GetEmployeeById(1).Name;
+            string uniqueFileName = null;
+            if (model.Photo != null)
+            {
+                string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photo.CopyTo(fileStream);
+                }
+                   
+            }
+
+            return uniqueFileName;
         }
+
+
+        public ViewResult Index()
+        {
+            var model = _employeeRepo.GetEmployees();
+            return View(model);
+        }
+
+        public ViewResult Details(int? id)
+        {
+            throw new Exception("Erorrrr");
+            Employee model = _employeeRepo.GetEmployeeById(id.Value);
+            /*ViewData["Employee"] = model;
+            ViewBag.PageTitle = "Set title using viewbag";*/
+            if(model==null)
+            {
+                return View("EmployeeNotFound", id.Value);
+            }
+
+            DetailsHomeViewModel detailsHomeViewModel = new DetailsHomeViewModel()
+            {
+                Employee = model,
+                PageTitle = "Home Details Page"
+            };
+            return View(detailsHomeViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(EmployeeCreateViewModel model)
+        {
+           if(ModelState.IsValid)
+            {
+                string uniqueFileName = ProcessUploadFile(model);
+                Employee newEmployee = new Employee
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Department = model.Department,
+                    PhotoPath = uniqueFileName
+
+                };
+                _employeeRepo.AddEmployee(newEmployee);
+                return RedirectToAction("details", new { id = newEmployee.Id });
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Edit(int id)
+        {
+            Employee employee = _employeeRepo.GetEmployeeById(id);
+            EmoloyeeEditViewModel emoloyeeEditViewModel = new EmoloyeeEditViewModel
+            {
+                Id = employee.Id,
+                Name = employee.Name,
+                Email = employee.Email,
+                Department = employee.Department,
+                ExistingPhotoPath = employee.PhotoPath
+            };
+
+            return View(emoloyeeEditViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(EmoloyeeEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee employee = _employeeRepo.GetEmployeeById(model.Id);
+                employee.Name = model.Name;
+                employee.Email = model.Email;
+                employee.Department = model.Department;
+                if(model.Photo!=null)
+                {
+                    if(model.ExistingPhotoPath!=null)
+                    {
+                        var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", model.ExistingPhotoPath);
+                        System.IO.File.Delete(filePath);
+
+                    }
+                    employee.PhotoPath = ProcessUploadFile(model);
+                }
+              
+                _employeeRepo.Update(employee);
+                return RedirectToAction("index");
+            }
+            return View();
+        }
+
     }
 }
