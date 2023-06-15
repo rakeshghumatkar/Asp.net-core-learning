@@ -1,0 +1,390 @@
+2023-05-22 13:27:55.8132|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-05-22 13:27:56.0398|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\rakes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-22 13:27:56.1449|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\rakes\AppData\Local\ASP.NET\DataProtection-Keys\key-d152fce7-b8e7-4fe8-ac84-a1ff12f60fc9.xml'.
+2023-05-22 13:27:56.1913|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {d152fce7-b8e7-4fe8-ac84-a1ff12f60fc9}.
+2023-05-22 13:27:56.2546|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {d152fce7-b8e7-4fe8-ac84-a1ff12f60fc9} with expiration date 2023-08-09 19:07:30Z as default key.
+2023-05-22 13:27:56.6442|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-22 13:27:56.6555|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-05-22 13:27:56.6555|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-22 13:27:56.6884|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-05-22 13:27:56.7045|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-05-22 13:27:56.7375|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {d152fce7-b8e7-4fe8-ac84-a1ff12f60fc9} as the default key.
+2023-05-22 13:27:56.7375|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {d152fce7-b8e7-4fe8-ac84-a1ff12f60fc9} was loaded during application startup.
+2023-05-22 13:27:57.0946|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Employee/Index.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Error/Exception.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Error/NotFound.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Create.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Details.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Edit.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/EmployeeNotFound.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/_ViewImports.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/_ViewStart.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Test.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-05-22 13:27:57.1141|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-05-22 13:27:57.4220|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:3088
+2023-05-22 13:27:57.4220|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebApp
+2023-05-22 13:27:57.4220|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Server.IISIntegration
+2023-05-22 13:27:57.4220|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-05-22 13:27:57.4220|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-05-22 13:27:57.4220|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\rakes\source\asp.net core\WebApp\WebApp
+2023-05-22 13:27:57.4220|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-05-22 13:27:57.7269|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17F" accepted.
+2023-05-22 13:27:57.7269|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" accepted.
+2023-05-22 13:27:57.7269|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17F" started.
+2023-05-22 13:27:57.7269|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" started.
+2023-05-22 13:27:57.8801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/ - -
+2023-05-22 13:27:57.8801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DEBUG http://localhost:37337/ - 0
+2023-05-22 13:27:57.8801|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 13:27:57.8801|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-05-22 13:27:57.9570|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" completed keep alive response.
+2023-05-22 13:27:57.9570|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type
+2023-05-22 13:27:57.9570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DEBUG http://localhost:37337/ - 0 - 200 0 - 82.2857ms
+2023-05-22 13:27:58.3106|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:27:58.4386|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ViewResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:27:58.4386|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:27:58.8724|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-22 13:27:58.9986|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:27:59.0532|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'.
+2023-05-22 13:27:59.1054|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2023-05-22 13:27:59.1160|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 69.0259ms.
+2023-05-22 13:28:01.1846|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.0 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2023-05-22 13:28:01.3872|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()'
+2023-05-22 13:28:01.8535|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Department (Nullable<Dept>) Required, 1], [Property: Employee.Email (string) Required, 2], [Property: Employee.Name (string) Required MaxLength(50), 3], [Property: Employee.PhotoPath (string), 4], }
+        SELECT e.Id, e.Department, e.Email, e.Name, e.PhotoPath
+        FROM Employees AS e), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    WebApp.Repository.AppDbContext, 
+    False, 
+    False
+)'
+2023-05-22 13:28:02.0287|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-05-22 13:28:02.2035|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (239ms).
+2023-05-22 13:28:02.2256|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:28:07.8866|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:28:07.9131|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:28:08.0067|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:28:08.0646|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:08.2998|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:08.2998|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:08.7297|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.2201|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.2201|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.3449|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.3449|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.3449|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:28:09.3728|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-05-22 13:28:09.3795|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:28:09.3917|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:28:09.4078|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'.
+2023-05-22 13:28:09.5682|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 10532.8842ms.
+2023-05-22 13:28:09.5682|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.HomeController.Index (WebApp) in 11127.2553ms
+2023-05-22 13:28:09.5682|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17F" completed keep alive response.
+2023-05-22 13:28:09.6118|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/ - - - 200 - text/html;+charset=utf-8 11736.6181ms
+2023-05-22 13:28:10.7568|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/favicon.ico - -
+2023-05-22 13:28:10.7568|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /favicon.ico does not match an existing file
+2023-05-22 13:28:10.7568|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:28:10.7693|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=favicon.ico, action=index
+2023-05-22 13:28:10.7693|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=favicon.ico, action=index
+2023-05-22 13:28:10.7693|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:28:10.7693|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:28:10.7693|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:28:10.8046|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:28:10.8046|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:28:10.8321|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:28:10.8465|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:28:10.8465|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:28:10.8465|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:28:10.8465|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:28:10.8465|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:28:10.9012|WARN|WebApp.Controllers.ErrorController|404 error /favicon.icoQuery string 
+2023-05-22 13:28:10.9012|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'NotFound' in controller 'Error'.
+2023-05-22 13:28:10.9012|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:28:10.9041|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 1.9535ms.
+2023-05-22 13:28:10.9041|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Error'.
+2023-05-22 13:28:10.9232|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 21.281ms.
+2023-05-22 13:28:10.9232|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 118.4181ms
+2023-05-22 13:28:10.9232|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" completed keep alive response.
+2023-05-22 13:28:10.9232|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/favicon.ico - - - 404 - text/html;+charset=utf-8 168.5045ms
+2023-05-22 13:29:22.5837|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17F" received FIN.
+2023-05-22 13:29:22.5913|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17G" received FIN.
+2023-05-22 13:29:22.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17G" sending FIN because: "The client closed the connection."
+2023-05-22 13:29:22.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17F" sending FIN because: "The client closed the connection."
+2023-05-22 13:29:22.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" disconnecting.
+2023-05-22 13:29:22.6398|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17F" disconnecting.
+2023-05-22 13:29:22.6927|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17F" stopped.
+2023-05-22 13:29:22.6927|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17G" stopped.
+2023-05-22 13:30:46.0056|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" accepted.
+2023-05-22 13:30:46.0661|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" started.
+2023-05-22 13:30:46.0833|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/foo/bar - -
+2023-05-22 13:30:46.1119|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /foo/bar does not match a supported file type
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=foo, action=bar
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=foo, action=bar
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:30:46.1414|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:30:46.1414|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:30:46.1598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:30:46.2027|WARN|WebApp.Controllers.ErrorController|404 error /foo/barQuery string 
+2023-05-22 13:30:46.2027|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'NotFound' in controller 'Error'.
+2023-05-22 13:30:46.2027|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:30:46.2027|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 5.1022ms.
+2023-05-22 13:30:46.2027|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Error'.
+2023-05-22 13:30:46.2027|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 9.3747ms.
+2023-05-22 13:30:46.2027|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 60.4009ms
+2023-05-22 13:30:46.2027|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" completed keep alive response.
+2023-05-22 13:30:46.2027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/foo/bar - - - 404 - text/html;+charset=utf-8 134.1280ms
+2023-05-22 13:30:49.7290|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/ - -
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:30:49.7290|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ViewResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:30:49.7290|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:30:49.7328|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:30:49.7328|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:30:49.7328|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:30:49.7328|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'Index' in controller 'Home'.
+2023-05-22 13:30:49.7328|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2023-05-22 13:30:49.7328|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 4.7485ms.
+2023-05-22 13:30:49.8621|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-05-22 13:30:49.8621|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (5ms).
+2023-05-22 13:30:49.8621|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:30:49.8749|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:30:49.8749|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:30:50.0350|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:30:50.0350|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Home'.
+2023-05-22 13:30:50.0452|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 303.8125ms.
+2023-05-22 13:30:50.0452|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.HomeController.Index (WebApp) in 312.4495ms
+2023-05-22 13:30:50.0452|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" completed keep alive response.
+2023-05-22 13:30:50.0452|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/ - - - 200 - text/html;+charset=utf-8 317.6457ms
+2023-05-22 13:32:02.3211|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17H" received FIN.
+2023-05-22 13:32:02.3211|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" accepted.
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" started.
+2023-05-22 13:32:02.3271|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/deatils/333 - -
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /deatils/333 does not match a supported file type
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=deatils, action=333
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=deatils, action=333
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:32:02.3271|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:02.3271|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:02.4054|WARN|WebApp.Controllers.ErrorController|404 error /deatils/333Query string 
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" disconnecting.
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'NotFound' in controller 'Error'.
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17H" sending FIN because: "The client closed the connection."
+2023-05-22 13:32:02.4247|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 0.3866ms.
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17H" stopped.
+2023-05-22 13:32:02.4247|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Error'.
+2023-05-22 13:32:02.4627|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 6.9677ms.
+2023-05-22 13:32:02.4627|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 134.9755ms
+2023-05-22 13:32:02.4627|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" completed keep alive response.
+2023-05-22 13:32:02.4627|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/deatils/333 - - - 404 - text/html;+charset=utf-8 136.4325ms
+2023-05-22 13:32:12.0961|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/ - -
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:32:12.0961|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ViewResult Index() on controller WebApp.Controllers.HomeController (WebApp).
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:12.0961|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.HomeController (WebApp)
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'Index' in controller 'Home'.
+2023-05-22 13:32:12.1152|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index.
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 0.1851ms.
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:32:12.1152|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:32:12.1235|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[Email], [e].[Name], [e].[PhotoPath]
+FROM [Employees] AS [e]
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeDB' on server '(localdb)\MSSQLLocalDB'.
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Home'.
+2023-05-22 13:32:12.1235|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 18.5161ms.
+2023-05-22 13:32:12.1235|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.HomeController.Index (WebApp) in 35.0915ms
+2023-05-22 13:32:12.1235|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" completed keep alive response.
+2023-05-22 13:32:12.1235|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/ - - - 200 - text/html;+charset=utf-8 40.1384ms
+2023-05-22 13:32:23.1013|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/deatil/333 - -
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /deatil/333 does not match a supported file type
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=deatil, action=333
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=deatil, action=333
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:32:23.1013|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:32:23.1013|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:23.1075|WARN|WebApp.Controllers.ErrorController|404 error /deatil/333Query string 
+2023-05-22 13:32:23.1075|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'NotFound' in controller 'Error'.
+2023-05-22 13:32:23.1075|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:32:23.1235|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 4.75ms.
+2023-05-22 13:32:23.1235|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Error'.
+2023-05-22 13:32:23.1235|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 9.7862ms.
+2023-05-22 13:32:23.1235|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 21.0604ms
+2023-05-22 13:32:23.1235|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" completed keep alive response.
+2023-05-22 13:32:23.1235|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/deatil/333 - - - 404 - text/html;+charset=utf-8 28.4497ms
+2023-05-22 13:32:36.6820|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/details/333 - -
+2023-05-22 13:32:36.6820|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /details/333 does not match a supported file type
+2023-05-22 13:32:36.6820|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:32:36.6820|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=details, action=333
+2023-05-22 13:32:36.6820|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=details, action=333
+2023-05-22 13:32:36.6820|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:32:36.6860|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:36.6860|WARN|WebApp.Controllers.ErrorController|404 error /details/333Query string 
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'NotFound' in controller 'Error'.
+2023-05-22 13:32:36.6860|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:32:36.6860|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 0.7697ms.
+2023-05-22 13:32:36.7018|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Error'.
+2023-05-22 13:32:36.7018|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 2.21ms.
+2023-05-22 13:32:36.7018|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 14.4688ms
+2023-05-22 13:32:36.7018|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" completed keep alive response.
+2023-05-22 13:32:36.7018|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/details/333 - - - 404 - text/html;+charset=utf-8 22.4063ms
+2023-05-22 13:32:47.1474|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:37337/detail/333 - -
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /detail/333 does not match a supported file type
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Routing.RouteBase|Request successfully matched the route with name '(null)' and template '{controller=home}/{action=index}/{id?}'
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ActionSelector|No actions matched the current request. Route values: controller=detail, action=333
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Routing.MvcRouteHandler|No actions matched the current request. Route values: controller=detail, action=333
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /Error/404 does not match a supported file type
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Error/{statusCode}'
+2023-05-22 13:32:47.1669|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HttpStatusCodeHandler", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HttpStatusCodeHandler(Int32) on controller WebApp.Controllers.ErrorController (WebApp).
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebApp.Controllers.ErrorController (WebApp)
+2023-05-22 13:32:47.1669|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'statusCode' of type 'System.Int32' using the name 'statusCode' in request data ...
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'statusCode' of type 'System.Int32' ...
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'statusCode' of type 'System.Int32'.
+2023-05-22 13:32:47.1695|WARN|WebApp.Controllers.ErrorController|404 error /detail/333Query string 
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view 'NotFound' in controller 'Error'.
+2023-05-22 13:32:47.1695|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view NotFound.
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Error/NotFound.cshtml' was found in 0.4129ms.
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache hit for view '_Layout' in controller 'Error'.
+2023-05-22 13:32:47.1695|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view NotFound executed in 2.048ms.
+2023-05-22 13:32:47.1695|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebApp.Controllers.ErrorController.HttpStatusCodeHandler (WebApp) in 11.2057ms
+2023-05-22 13:32:47.1695|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" completed keep alive response.
+2023-05-22 13:32:47.1695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:37337/detail/333 - - - 404 - text/html;+charset=utf-8 32.5781ms
+2023-05-22 13:34:52.5252|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17I" received FIN.
+2023-05-22 13:34:52.5531|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" disconnecting.
+2023-05-22 13:34:52.5531|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMQQJ90RH17I" stopped.
+2023-05-22 13:34:52.5661|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMQQJ90RH17I" sending FIN because: "The Socket transport's send loop completed gracefully."

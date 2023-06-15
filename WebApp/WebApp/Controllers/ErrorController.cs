@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,16 @@ using System.Threading.Tasks;
 
 namespace WebApp.Controllers
 {
+    [AllowAnonymous]
     public class ErrorController : Controller
     {
+        private readonly ILogger<ErrorController> logger;
+
+        public ErrorController(ILogger<ErrorController> _logger)
+        {
+            logger = _logger;
+        }
+
         [Route("Error/{statusCode}")]
         public IActionResult HttpStatusCodeHandler(int statusCode)
         {
@@ -18,8 +27,10 @@ namespace WebApp.Controllers
             {
                 case 404:
                     ViewBag.ErrorMessage = "Sorry, the resource you requested could not found";
-                    ViewBag.Path = statusCodeResult.OriginalPath;
-                    ViewBag.QS = statusCodeResult.OriginalQueryString;
+                    /* showing status code and query path to user
+                     * ViewBag.Path = statusCodeResult.OriginalPath;
+                     ViewBag.QS = statusCodeResult.OriginalQueryString;*/
+                    logger.LogWarning($"404 error {statusCodeResult.OriginalPath}" + $"Query string {statusCodeResult.OriginalQueryString}");
                     break;
             }
                 
@@ -34,7 +45,8 @@ namespace WebApp.Controllers
             ViewBag.exceptionPath = exceptionDetails.Path;
             ViewBag.exceptionMessge = exceptionDetails.Error.Message;
             ViewBag.exceptionStackTrace = exceptionDetails.Error.StackTrace;
-            return View("Exception");
+            logger.LogError($"The path {exceptionDetails.Path} is not valid" + $"Message {exceptionDetails.Error}");
+            return View("Error");
         }
     }
 }

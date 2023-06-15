@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ApplicationUser>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+@if (Model.Any())
+{
+    <a class="btn btn-primary mb-3" style="width:auto" asp-controller="Account" asp-action="Register">Add New User</a>
+    @foreach (var user in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-title">
+                User Id : @user.Id
+            </div>
+            <div class="card-body">
+                User Name : @user.UserName
+            </div>
+            <div class="card-footer">
+                <form action="DeleteUser" method="post">
+                    <a class="btn btn-primary" style="width:auto" asp-controller="Administration" asp-action="EditUser"
+                       asp-route-Id="@user.Id">Edit</a>
+
+                    <span id="confirmDeleteSpan_@user.Id" style="display:none">
+                        <span>Are you sure you want to delete?</span>
+                        <button type="submit" class="btn btn-danger" asp-action="DeleteUser"
+                                asp-controller="Administration" asp-route-Id="@user.Id">Yes</button>
+                        <a href="#" class="btn btn-primary" onclick="confirmDelete('@user.Id',false)">No</a>
+                    </span>
+                    <span id="deleteSpan_@user.Id">
+                        <a href="#" class="btn btn-danger" onclick="confirmDelete('@user.Id', true)">Delete</a>
+                    </span>
+                    @*<button type="submit" class="btn btn-danger" style="width:auto" asp-controller="Administration"
+                        asp-action="DeleteUser" asp-route-Id="@user.Id">Delete</button>*@
+                </form>
+            </div>
+        </div>
+     }
+
+        
+    }
+else
+{
+    <div class="card">
+        <div class="card-title">
+            No user has created yet.
+        </div>
+        <div class="card-body">
+            <a class="btn btn-primary" style="width:auto" asp-controller="Account" asp-action="Register">Add New User</a>
+        </div>
+    </div>
+}
+
+
+@section Scripts { 
+    <script src="~/js/CustomScript.js"></script>
+}

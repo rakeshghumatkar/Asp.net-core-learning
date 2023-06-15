@@ -1,0 +1,17 @@
+﻿@if (ViewBag.ErrorTitle != null)
+{
+    <div class="text-danger">
+        <h1> Error</h1>
+        <h5> Unknown Exception has occure please check your steps</h5>
+    </div>
+
+}
+else
+{
+    <h1>@ViewBag.ErrorTitle</h1>
+    <h5>@ViewBag.ErrorMessage</h5>
+}
+
+<h6>@ViewBag.exceptionPath</h6>
+<h6>@ViewBag.exceptionMessge</h6>
+<h6>@ViewBag.exceptionStackTrace</h6>

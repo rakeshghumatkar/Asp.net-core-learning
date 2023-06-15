@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting.Internal;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,18 +11,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApp.Models;
 using WebApp.Repository;
+using WebApp.Security;
 using WebApp.ViewModels;
 
 namespace WebApp.Controllers
 {
+    //[Authorize]
     public class HomeController : Controller
     {
         private readonly IEmployeeRepo _employeeRepo;
         private readonly IHostingEnvironment _hostingEnvironment;
-        public HomeController(IEmployeeRepo employeeRepo, IHostingEnvironment hostingEnvironment)
+        private readonly ILogger<HomeController> logger;
+        protected readonly IDataProtectionProvider protector;
+
+        public HomeController(IEmployeeRepo employeeRepo, IHostingEnvironment hostingEnvironment, ILogger<HomeController> logger,
+            IDataProtectionProvider dataProtectionProvider, DataProtectionPurposeString dataProtectionPurposeString)
         {
             _employeeRepo = employeeRepo;
             _hostingEnvironment = hostingEnvironment;
+            this.logger = logger;
+            //data encryption
+            protector = dataProtectionProvider.CreateProtector(dataProtectionPurposeString.EmployeeIdRouteValue);
         }
 
         private string ProcessUploadFile(EmployeeCreateViewModel model)
@@ -40,16 +52,31 @@ namespace WebApp.Controllers
             return uniqueFileName;
         }
 
-
+        [AllowAnonymous]
         public ViewResult Index()
         {
+            // Cannot find the Protect method in I DataProtectionProvider
+            /*var model = _employeeRepo.GetEmployees().Select(e=> 
+            {
+                //e.EncryptedId = protector.(e.Id.ToString());
+                e.EncryptedId = protector.Protect(e.Id.ToString());
+                return e;
+                
+            });*/
             var model = _employeeRepo.GetEmployees();
             return View(model);
         }
-
+        
+        
         public ViewResult Details(int? id)
         {
-            throw new Exception("Erorrrr");
+            logger.LogTrace("log Trace");
+            logger.LogDebug("log debug");
+            logger.LogInformation("log information");
+            logger.LogWarning("log warning");
+            logger.LogError("log error");
+            logger.LogCritical("log Critical");
+            
             Employee model = _employeeRepo.GetEmployeeById(id.Value);
             /*ViewData["Employee"] = model;
             ViewBag.PageTitle = "Set title using viewbag";*/
@@ -65,7 +92,8 @@ namespace WebApp.Controllers
             };
             return View(detailsHomeViewModel);
         }
-
+        
+       
         [HttpGet]
         public ViewResult Create()
         {
